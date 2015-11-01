@@ -142,7 +142,7 @@ h4{
     background-image: url('../img/bgNext1.png');
     background-repeat: no-repeat;
     float:right;
-    opacity:.4;
+    opacity:.7;
     position: relative;
         right: -41px;
     top: -210px;
@@ -216,6 +216,7 @@ header img{
     height:50px;
     position: relative;
     clear: both;
+    border-top: 1px solid;
 }
 .footerContainer p{
     float: left;
@@ -228,10 +229,4 @@ header img{
 }
 #gigs h1{
     color:;
-}
-body#gigs{
-    background: -webkit-linear-gradient(#171e21, #ffffff); 
-    background: -o-linear-gradient(#171e21, #ffffff); 
-    background: -moz-linear-gradient(#171e21, #ffffff); 
-    background: linear-gradient(#171e21, #ffffff);
 }
