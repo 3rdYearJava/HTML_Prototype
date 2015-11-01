@@ -1,0 +1,230 @@
+body{
+	background-color: #171e21;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border:none;
+    background-color: #171E21;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+    font-size: 16px;
+}
+ul.navbar-nav{
+
+	position: relative;
+	margin-right:auto;
+	margin-left:auto;
+}
+.navbar{
+	height:50px;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+@media (min-width: 768px){
+	.navbar-brand{
+		display:none;
+	}
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    
+    border-bottom: 1px solid #9d9d9d !important;
+    }
+	.navbar-nav>li {
+    border-right: 2px solid #9d9d9d;
+   	}
+   	.navbar-nav>li:last-of-type {
+    border-right: 0px solid #9d9d9d;
+	}
+	.navbar-static-top .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-static-top .navbar-nav > li {
+        float: none;
+    }
+    .navbar-static-top .nav > li {
+        display: inline;
+        padding: 18px 0px 17px;
+    }
+    .navbar-static-top .nav > li > a {
+        display: inline-block;
+    }
+}
+.one-time img{
+	max-height:550px;
+}
+.slideDesc {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    margin-top: -60px;
+}
+.slick-prev, .slick-next {
+	z-index: 100;
+}
+.one-time .slick-prev {
+    left: 15px;
+}
+.slick-next {
+    right: 15px;
+}
+.slick-list {
+    outline: none !important;
+}
+.slick-slide:focus { outline: none; }
+
+.navbar {  
+    margin-bottom: 0px;
+}
+.featuredBox{
+	width:31%;
+	height:auto;
+	float:left;
+	position: relative;
+	display: block;
+	margin:3px;
+}
+.featuredBox img{
+	width:100%;
+	max-height:182px;
+	position: relative;
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+}
+.featuredRow{
+	padding: 15px 5% 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 40px 1% 30px;
+    background-color: #0c1215;
+    box-shadow: 0 0 10px #000;
+}
+.slick-dots li button::before {
+    font-family: slick;
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+.container h2{
+	font-family: 'gartonmedium', serif;
+	font-size: 36px;
+    color: #9d9d9d;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+h3 {
+    margin-top: 10px;
+    color: #C12222;
+}
+h4{
+	color: #9d9d9d;
+	font-style: italic;
+}
+.next {
+	display: block;
+    height: 70px;
+    width: 30px;
+    background-image: url('../img/bgNext1.png');
+    background-repeat: no-repeat;
+    float:right;
+    opacity:.4;
+    position: relative;
+        right: -41px;
+    top: -210px;
+}
+.prev {
+	display: block;
+    height: 70px;
+    width: 30px;
+    background-image: url('../img/bgPrev1.png');
+    background-repeat: no-repeat;
+    float:left;
+    opacity: .4;
+    position: relative;
+    left: -70px;
+    top: -210px;
+}
+.next:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+.prev:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+.featuredLink{
+	background-color: #C12222;
+	text-transform: uppercase;
+	color:#ffffff;
+	text-align: center;
+	padding:10px;
+	
+	display: block;
+    font-size: 16px;
+}
+.featuredLink:focus{
+	outline: none;
+}
+.featuredLink:hover{
+	cursor: pointer;
+	color:#9d9d9d;
+	text-decoration: none
+}
+.featuredBox i{
+	float:right;
+	margin-right: 15px;
+	
+}
+.featuredBox i.fa-thumbs-up{
+	color:green;
+}
+.featuredBox i.fa-thumbs-down{
+	color:red;
+}
+h4.location{
+	font-size:16px;
+}
+header{
+	height:100px;
+	position: relative;
+	width:100%;
+	border-bottom: 1px solid #9d9d9d;
+}
+header img{
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+.footerContainer{
+    width:100%;
+    height:50px;
+    position: relative;
+    clear: both;
+    background-color: #0c1215;
+}
+.footerContainer p{
+    float: left;
+    
+    margin-top: 15px;
+    color:#fff;
+}
+#gigs .featuredBox{
+    background-color: #0C1215;
+}
