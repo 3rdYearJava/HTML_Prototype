@@ -1,12 +1,12 @@
-body{
-	background-color: #171e21;
-}
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border:none;
-    background-color: #171E21;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #C12222;
+    background-color: transparent;
 }
 .navbar-inverse .navbar-nav>li>a {
-    color: #9d9d9d;
+    color: #373c3d;
     font-size: 16px;
 }
 ul.navbar-nav{
@@ -23,19 +23,36 @@ ul.navbar-nav{
     background-color: transparent;
     border-color: transparent;
 }
+.navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+    background: #ffffff;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+}
+.navbar-header {
+    border-bottom: 1px solid;
+}
 @media (min-width: 768px){
 	.navbar-brand{
 		display:none;
 	}
     .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     
-    border-bottom: 1px solid #9d9d9d !important;
+    border-bottom: 1px solid #373c3d !important;
     }
 	.navbar-nav>li {
-    border-right: 2px solid #9d9d9d;
+    border-right: 2px solid #373c3d;
+
    	}
    	.navbar-nav>li:last-of-type {
-    border-right: 0px solid #9d9d9d;
+    border-right: 0px solid #373c3d;
 	}
 	.navbar-static-top .navbar-nav {
         float: none;
@@ -51,6 +68,15 @@ ul.navbar-nav{
     .navbar-static-top .nav > li > a {
         display: inline-block;
     }
+    .nav>li{
+        border-bottom: 1px solid;
+    }
+}
+.container1{
+    width:95%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 .one-time img{
 	max-height:550px;
@@ -102,7 +128,6 @@ ul.navbar-nav{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 40px 1% 30px;
-    background-color: #0c1215;
     box-shadow: 0 0 10px #000;
 }
 .slick-dots li button::before {
@@ -123,7 +148,7 @@ ul.navbar-nav{
 .container h2{
 	font-family: 'gartonmedium', serif;
 	font-size: 36px;
-    color: #9d9d9d;
+    color: #373c3d;
     text-align: center;
     margin-bottom: 35px;
     margin-top: 35px;
@@ -133,7 +158,7 @@ h3 {
     color: #C12222;
 }
 h4{
-	color: #9d9d9d;
+	color: #373c3d;
 	font-style: italic;
 }
 .next {
@@ -143,7 +168,7 @@ h4{
     background-image: url('../img/bgNext1.png');
     background-repeat: no-repeat;
     float:right;
-    opacity:.4;
+    opacity:.7;
     position: relative;
         right: -41px;
     top: -210px;
@@ -183,7 +208,7 @@ h4{
 }
 .featuredLink:hover{
 	cursor: pointer;
-	color:#9d9d9d;
+	color:#373c3d;
 	text-decoration: none
 }
 .featuredBox i{
@@ -204,7 +229,7 @@ header{
 	height:100px;
 	position: relative;
 	width:100%;
-	border-bottom: 1px solid #9d9d9d;
+	border-bottom: 1px solid #373c3d;
 }
 header img{
 	display: block;
@@ -217,14 +242,15 @@ header img{
     height:50px;
     position: relative;
     clear: both;
-    background-color: #0c1215;
+    border-top: 1px solid;
 }
 .footerContainer p{
     float: left;
     
     margin-top: 15px;
-    color:#fff;
+    color:#373c3d;
 }
-#gigs .featuredBox{
-    background-color: #0C1215;
+
+#gigs h1{
+    color:;
 }
