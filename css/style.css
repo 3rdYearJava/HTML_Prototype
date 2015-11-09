@@ -88,6 +88,14 @@ ul.navbar-nav{
     display: block;
     margin:10px;
 }
+#gigs .featuredBox{
+    width:46%;
+    height:auto;
+    float:right;
+    position: relative;
+    display: block;
+    margin:10px;
+}
 .featuredBox img{
     width:100%;
     max-height:182px;
@@ -269,6 +277,7 @@ h1{
 }
 p.gigDesc{
     color: #ffffff;
+    margin-right: 50px;
 }
 .venue{
     position: relative;
@@ -297,6 +306,7 @@ a.likeButton{
     cursor:pointer;
     position: relative;
     float:right;
+    margin-right:50px;
 }
 a.likeButton:hover{
     text-decoration: none;
@@ -320,6 +330,7 @@ a.likeButton:hover{
 }
 .comment p{
     color:#ffffff;
+    margin-right:50px;
 }
 textarea.textareaStyle {
     width: 70%;
@@ -357,4 +368,108 @@ p.warning{
     margin-left: 15%;
     margin-top:40px;
     display:none;
+}
+#login {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    font-family: raleway;
+    border: 2px solid #ccc;
+    padding: 10px 40px 25px;
+    margin-top: 70px;
+}
+#admin-login h2{
+    color:#c12222;
+    text-align: center;
+}
+#admin-login form{
+    color: #ffffff;
+}
+#admin-login input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: raleway;
+    color:#000;
+}
+#admin-login input[type=submit] {
+    width: 100%;
+    background-color: #c12222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sideMenu {
+    width: 25%;
+    float: left;
+    height: auto;
+    position: relative;
+    margin-top: 30px;
+    margin-left:10px;
+    background-color: #000000;
+}
+.navToggle {
+    margin: 0;
+    padding: 15px;
+    background-color: #3D4952;
+    display: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+.sideMenu h3 {
+    margin: 0;
+    padding: 15px;
+    background-color: #3D4952;
+    color:#fff;
+}
+.sideMenuList li {
+    padding: 15px;
+    background-color: #DADFE0;
+    margin: 0px;
+    color: #2C343B;
+    -o-transition: color .1s ease-out, background .5s ease-in;
+    -ms-transition: color .1s ease-out, background .5s ease-in;
+    -moz-transition: color .1s ease-out, background .5s ease-in;
+    -webkit-transition: color .1s ease-out, background .5s ease-in;
+    transition: color .1s ease-out, background .5s ease-in;
+}
+.sideMenuList li:hover {
+    background-color: #D44457;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+}
+.sideMenuList a:hover {
+    text-decoration: none;
+}
+ul.sideMenuList {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    list-style: none;
+}
+.content {
+    width: 70%;
+    float: right;
+    height: auto;
+    margin-top:20px;
+}
+.sideMenu li.current {
+    background-color: #D44457;
+    cursor: pointer;
+    color: #ffffff;
 }
