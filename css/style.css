@@ -6,7 +6,7 @@ body{
     background-color: #171E21;
 }
 .navbar-inverse .navbar-nav>li>a {
-    color: #9d9d9d;
+    color: #ffffff;
     font-size: 16px;
 }
 ul.navbar-nav{
@@ -29,13 +29,13 @@ ul.navbar-nav{
     }
     .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     
-    border-bottom: 1px solid #9d9d9d !important;
+    border-bottom: 1px solid #ffffff !important;
     }
     .navbar-nav>li {
-    border-right: 2px solid #9d9d9d;
+    border-right: 2px solid #ffffff
     }
     .navbar-nav>li:last-of-type {
-    border-right: 0px solid #9d9d9d;
+    border-right: 0px solid #ffffff;
     }
     .navbar-static-top .navbar-nav {
         float: none;
@@ -204,7 +204,7 @@ header{
     height:100px;
     position: relative;
     width:100%;
-    border-bottom: 1px solid #9d9d9d;
+    border-bottom: 1px solid #ffffff;
 }
 header img{
     display: block;
@@ -238,7 +238,7 @@ header img{
     margin-right: 0px;
 }
 h1{
-    color: #9D9D9D;
+    color: #ffffff;
 }
 .sort{
     position: relative;
@@ -266,4 +266,95 @@ h1{
     text-align: left;
     margin-bottom: 11px;
     margin-top: 35px;
+}
+p.gigDesc{
+    color: #ffffff;
+}
+.venue{
+    position: relative;
+    display: block;
+    float: left;
+}
+p.venue1{
+    font-size: 24px;
+    margin-left: 60px;
+    color: #ffffff;
+}
+span.venue{
+    float: left;
+    margin-top: 5px;
+    color: #C12222;
+    font-size: 18px;
+}
+a.likeButton{
+    display:       inline-block;
+    padding:       8px 20px;
+    background:    #c12222;
+    color:         #fff;
+    font:          normal 700 24px/1 "Noto Sans", sans-serif;
+    text-align:    center;
+    text-shadow:   none;
+    cursor:pointer;
+    position: relative;
+    float:right;
+}
+a.likeButton:hover{
+    text-decoration: none;
+}
+.commentSection {
+    position: relative;
+    display: block;
+    margin-top: 150px;
+}
+.comment img{
+    width:80px !important;
+    float:left;
+    margin: 20px 30px 20px 50px !important;
+}
+.comment{
+    border-top:1px solid;
+    margin-top: 25px;
+}
+.comment h3{
+    margin-top:20px;
+}
+.comment p{
+    color:#ffffff;
+}
+textarea.textareaStyle {
+    width: 70%;
+    top: 20px;
+    border: 1px solid #ccc;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    font-family: raleway;
+    display: block;
+    position: relative;
+    height: 120px;
+    resize: none;
+}
+.commentSection input.postSubmit{
+    display:       inline-block;
+    padding:       8px 20px;
+    background:    #c12222;
+    color:         #fff;
+    font:          normal 700 24px/1 "Noto Sans", sans-serif;
+    text-align:    center;
+    text-shadow:   none;
+    margin-right: 15%;
+    float: right;
+    border: none;
+    margin-top:30px;
+}
+.commentSection form{
+    height:200px;
+    border-top: 1px solid;
+}
+p.warning{
+    color:#c12222;
+    float: left;
+    margin-left: 15%;
+    margin-top:40px;
+    display:none;
 }
