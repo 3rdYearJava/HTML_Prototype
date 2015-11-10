@@ -225,7 +225,7 @@ header img{
     height:50px;
     position: relative;
     clear: both;
-    background-color: #0c1215;
+    border-top:1px solid #fff;
 }
 .footerContainer p{
     float: left;
@@ -284,12 +284,29 @@ p.gigDesc{
     display: block;
     float: left;
 }
+.price{
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
 p.venue1{
     font-size: 24px;
     margin-left: 60px;
     color: #ffffff;
 }
+p.price1{
+    font-size: 24px;
+    margin-left: 95px;
+    color: #ffffff;
+}
 span.venue{
+    float: left;
+    margin-top: 5px;
+    color: #C12222;
+    font-size: 18px;
+}
+span.price{
     float: left;
     margin-top: 5px;
     color: #C12222;
@@ -397,6 +414,37 @@ p.warning{
     color:#000;
 }
 #admin-login input[type=submit] {
+    width: 100%;
+    background-color: #c12222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#user-login h2{
+    color:#c12222;
+    text-align: center;
+}
+#user-login form{
+    color: #ffffff;
+}
+#user-login input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: raleway;
+    color:#000;
+}
+#user-login input[type=submit] {
     width: 100%;
     background-color: #c12222;
     color: #fff;
