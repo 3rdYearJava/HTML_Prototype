@@ -88,7 +88,7 @@ ul.navbar-nav{
     display: block;
     margin:10px;
 }
-#gigs .featuredBox{
+#gigs .featuredBox, #profile .featuredBox{
     width:46%;
     height:auto;
     float:right;
@@ -233,14 +233,14 @@ header img{
     margin-top: 15px;
     color:#fff;
 }
-#gigs h3 {
+#gigs h3, #profile h3{
     text-align:center;
 }
-#gigs h4.location{
+#gigs h4.location, #profile h4.location{
     
     text-align:center;
 }
-#gigs .featuredBox i {
+#gigs .featuredBox i , #profile .featuredBox i{
     float: none;
     margin-left: 5px;
     margin-right: 0px;
@@ -356,13 +356,12 @@ textarea.textareaStyle {
     margin-right: auto;
     margin-left: auto;
     font-size: 16px;
-    font-family: raleway;
     display: block;
     position: relative;
     height: 120px;
     resize: none;
 }
-.commentSection input.postSubmit{
+.commentSection input.postSubmit, #edit_profile input.postSubmit{
     display:       inline-block;
     padding:       8px 20px;
     background:    #c12222;
@@ -520,4 +519,68 @@ ul.sideMenuList {
     background-color: #D44457;
     cursor: pointer;
     color: #ffffff;
+}
+.sideContent {
+    width: 28%;
+    float: left;
+    height: auto;
+    margin-top: 20px;
+}
+.sideContent img{
+    max-width:90%;
+    position: relative;
+    display: block;
+    margin:10px auto;
+}
+.sideContent h3{
+    text-align: center;
+    font-size: 30px;
+}
+.sideContent p{
+    color:#ffffff;
+}
+a.editProfile{
+    color:#c12222;
+    float:left;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+img.editProfileImg{
+    width:250px;
+    position: relative;
+    display: block;
+    margin:10px auto;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+        display: block;
+    max-width: 120px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.btn-primary {
+    color: #fff;
+    background-color: #c12222;
+    border-color: #c12223
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #c12222;
+}
+.btn{
+    border-radius:0px;
+    font:          normal 700 24px/1 "Noto Sans", sans-serif;
+    text-align:    center;
+    text-shadow:   none;
 }

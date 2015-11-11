@@ -30,8 +30,9 @@
     <![endif]-->
 
 </head>
-<body id="user-login">
-    <div class="container1">
+
+<body id="edit_profile">
+    <a href=""></a>
     <!-- Navigation -->
     <header>
         <a href="index.html">
@@ -62,8 +63,8 @@
                     </li>
                     
                     <li>
-                        <a href="login.html">Login / Register</a>
-                    </li>                    
+                        <a href="login.html">Login</a>
+                    </li>                     
                     <li>
                         <a href="#">Contact</a>
                     </li>
@@ -72,25 +73,42 @@
             <!-- /.navbar-collapse -->
         
     </nav>
-        <div id="login">
-            <h2>Login</h2>
-            <form action="" method="post">
-            <label>UserName :</label>
-            <input id="name" name="username" placeholder="username" type="text">
-            <label>Password :</label>
-            <input id="password" name="password" placeholder="**********" type="password">
-            <input name="submit" type="submit" value=" Login ">
-            <span><?php echo $error; ?></span>
+    
+    <!-- Page Content -->
+    <div class="container">
+        
+        <h1>Edit Profile</h1>
+        <form onsubmit="return validateComment()"action="" method="post">
+            <img src="img/profile.jpg" class="editProfileImg" alt="">
+            <div class="fileUpload btn btn-primary">
+                <span>Upload</span>
+                <input type="file" class="upload" />
+            </div>
+            <p>Your Bio has a word limit of 100 words</p>
+            <textarea class="textareaStyle" name="userpost" id="userpost" placeholder="Your Bio...." maxlength="150"></textarea>
             
-            </form>
-        </div>
+            <input name="submit" type="submit" class="postSubmit" value=" Update ">
+            
+        </form>
+        
     </div>
+
     <footer class="footerContainer">
         <div class="container">
             <p>&copy; GigForMe 2015</p>
 
         </div>
     </footer>
+    
+
+    
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
 </body>
 
 </html>

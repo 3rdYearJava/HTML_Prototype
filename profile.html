@@ -30,8 +30,9 @@
     <![endif]-->
 
 </head>
-<body id="user-login">
-    <div class="container1">
+
+<body id="profile">
+    <a href=""></a>
     <!-- Navigation -->
     <header>
         <a href="index.html">
@@ -62,8 +63,8 @@
                     </li>
                     
                     <li>
-                        <a href="login.html">Login / Register</a>
-                    </li>                    
+                        <a href="login.html">Login</a>
+                    </li>                     
                     <li>
                         <a href="#">Contact</a>
                     </li>
@@ -72,25 +73,62 @@
             <!-- /.navbar-collapse -->
         
     </nav>
-        <div id="login">
-            <h2>Login</h2>
-            <form action="" method="post">
-            <label>UserName :</label>
-            <input id="name" name="username" placeholder="username" type="text">
-            <label>Password :</label>
-            <input id="password" name="password" placeholder="**********" type="password">
-            <input name="submit" type="submit" value=" Login ">
-            <span><?php echo $error; ?></span>
-            
-            </form>
+    
+    <!-- Page Content -->
+    <div class="container">
+        
+        <h1>Ben_Cookie's Profile</h1>
+        
+        <div class="sideContent">
+            <img src="img/profile.jpg" alt="profile picture">
+            <h3>Ben Cooke</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
         </div>
+        <div class="content">
+            <div class = "sort">
+                <a class="editProfile" href="edit_profile.html">Edit Profile</a>
+                <p>Showing 1 - 4 of 4 UpVoted &amp; Commented Gigs</p>
+            </div>
+            <div class="featuredBox">
+                <img src="img/u2.jpg" alt="U2">
+                <h3>U2</h3>
+                <h4 class="location">Croke Park <i class="fa fa-thumbs-up"> 100</i> <i class="fa fa-thumbs-down"> 5</i></h4>
+            </div>
+            <div class="featuredBox">
+                <img src="img/coldplay.jpg" alt="Coldplay">
+                <h3>Coldplay</h3>
+                <h4 class="location">Marquee <i class="fa fa-thumbs-up"> 250</i> <i class="fa fa-thumbs-down"> 20</i></h4>
+            </div>
+            <div class="featuredBox">
+                <img src="img/imagine-dragons.jpg" alt="Imagine Dragons">
+                <h3>Imagine Dragons</h3>
+                <h4 class="location">02 Arena <i class="fa fa-thumbs-up"> 160</i> <i class="fa fa-thumbs-down"> 8</i></h4>
+            </div>
+            <div class="featuredBox">
+                <img src="img/Kodaline.jpg" alt="Kodaline">
+                <h3>Kodaline</h3>
+                <h4 class="location">The Aviva Stadium <i class="fa fa-thumbs-up"> 113</i> <i class="fa fa-thumbs-down"> 6</i></h4>
+            </div>
+        </div>
+
     </div>
+
     <footer class="footerContainer">
         <div class="container">
             <p>&copy; GigForMe 2015</p>
 
         </div>
     </footer>
+    
+
+    
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
 </body>
 
 </html>
