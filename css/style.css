@@ -23,6 +23,9 @@ ul.navbar-nav{
     background-color: transparent;
     border-color: transparent;
 }
+.navbar-inverse .navbar-nav>li>a.active{
+    color:#c12222;
+}
 @media (min-width: 768px){
     .navbar-brand{
         display:none;
@@ -31,11 +34,13 @@ ul.navbar-nav{
     
     border-bottom: 1px solid #ffffff !important;
     }
-    .navbar-nav>li {
-    border-right: 2px solid #ffffff
+    .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 45px;
     }
-    .navbar-nav>li:last-of-type {
-    border-right: 0px solid #ffffff;
+    .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+        color:#c12222;
     }
     .navbar-static-top .navbar-nav {
         float: none;
@@ -78,7 +83,7 @@ ul.navbar-nav{
 .slick-slide:focus { outline: none; }
 
 .navbar {  
-    margin-bottom: 0px;
+    margin-bottom: -9px;
 }
 .featuredBox{
     width:31%;
