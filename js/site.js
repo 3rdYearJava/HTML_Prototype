@@ -24,21 +24,24 @@ if (fname.value.length < 3) {
 	fname.focus();
 	return false;
 }else if(lname.value.length < 3){
-	
+	var mistakeText = document.getElementById('mistake').innerHTML = "You left your last name blank";
+	setTimeout(hide, 5000);
 	lname.style.borderColor = "red";
 	lname.style.borderWidth = "medium";
 	lname.focus();
 
 	return false;
 }else if(email.value.length < 3){
-	
+	var mistakeText = document.getElementById('mistake').innerHTML = "You left your email blank";
+	setTimeout(hide, 5000);
 	email.style.borderColor = "red";
 	email.style.borderWidth = "medium";
 	email.focus();
 
 	return false;
 }else if(username.value.length < 3){
-	
+	var mistakeText = document.getElementById('mistake').innerHTML = "You left your username blank";
+	setTimeout(hide, 5000);
 	username.style.borderColor = "red";
 	username.style.borderWidth = "medium";
 	username.focus();
@@ -46,54 +49,83 @@ if (fname.value.length < 3) {
 	return false;
 }
 else if( !username.value.match(letterNumber)){
-	alert("Your username is invalid, your username can only contain alphanumeric characters")
+	var mistakeText = document.getElementById('mistake').innerHTML = "Your username is invalid, your username can only contain alphanumeric characters";
+	setTimeout(hide, 10000);
+	username.style.borderColor = "red";
+	username.style.borderWidth = "medium";
 	username.value = "";
+	username.focus();
 	return false;
 }
 else if(password.value.length < 3){
-	password.style.backgroundColor = "red";
+	var mistakeText = document.getElementById('mistake').innerHTML = "You left your password blank";
+	setTimeout(hide, 5000);
+	password.style.borderColor = "red";
+	password.style.borderWidth = "medium";
+	password.focus();
 
 	return false;
 }
 else if(password1.value.length < 3){
-	password1.style.backgroundColor = "red";
-
-
+	var mistakeText = document.getElementById('mistake').innerHTML = "You left the second password field blank";
+	setTimeout(hide, 5000);
+	password1.style.borderColor = "red";
+	password1.style.borderWidth = "medium";
+	password1.focus();
 	return false;
 }else if(fname.value.length > 25){
-	fname.style.backgroundColor = "red";
-	alert("There is a 25 character limit for your first name");
+	fname.style.borderColor = "red";
+	fname.style.borderWidth = "medium";
+	fname.focus();
+	var mistakeText = document.getElementById('mistake').innerHTML = "Your first name is greater than 25 characters";
+	setTimeout(hide, 10000);
 	fname.value = "";
 	return false;
 }else if(lname.value.length > 25){
-	lname.style.backgroundColor = "red";
-	alert("There is a 25 character limit for your last name");
+	lname.style.borderColor = "red";
+	lname.style.borderWidth = "medium";
+	lname.focus();
+	var mistakeText = document.getElementById('mistake').innerHTML = "Your last name is greater than 25 characters";
+	setTimeout(hide, 10000);
 	lname.value = "";
 	return false;
 }else if(email.value.length > 60){
-	email.style.backgroundColor = "red";
-	alert("Your email is too long");
+	email.style.borderColor = "red";
+	email.style.borderWidth = "medium";
+	email.focus();
+	var mistakeText = document.getElementById('mistake').innerHTML = "Your email is too long";
+	setTimeout(hide, 10000);
 	email.value = "";
 	return false;
 }else if(username.value.length > 25){
-	username.style.backgroundColor = "red";
-	alert("There is a 25 character limit for your username");
+	username.style.borderColor = "red";
+	username.style.borderWidth = "medium";
+	username.focus();
+	var mistakeText = document.getElementById('mistake').innerHTML = "Your username is greater than 25 characters";
+	setTimeout(hide, 10000);
 	username.value = "";
 	return false;
 }
 else if(password.value.length > 25){
-	password.style.backgroundColor = "red";
-	alert("There is a 25 character limit for your password");
+	password.style.borderColor = "red";
+	password.style.borderWidth = "medium";
+	password.focus();
+	var mistakeText = document.getElementById('mistake').innerHTML = "Your password is greater than 25 characters";
+	setTimeout(hide, 10000);
 	password.value = "";
 	return false;
 }
 
 else if(password.value !== password1.value){
-	password1.style.backgroundColor = "red";
-	password.style.backgroundColor = "red";
+	password.style.borderColor = "red";
+	password.style.borderWidth = "medium";
+	password1.style.borderColor = "red";
+	password1.style.borderWidth = "medium";
 	password.value=  "";
 	password1.value = "";
-	alert("Your Passwords didn't match");
+	var mistakeText = document.getElementById('mistake').innerHTML = "Your passwords don't match";
+	setTimeout(hide, 10000);
+	password.focus();
 	return false;
 }
 else{
@@ -101,5 +133,5 @@ else{
 }
 };
 function colourChange(this1){
-	this1.style.backgroundColor = "white";
+	this1.style.borderColor = "white";
 };

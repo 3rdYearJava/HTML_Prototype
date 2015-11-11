@@ -699,3 +699,6 @@ span#mistake{
 .module a:hover {
     opacity: 0.8;
 }
+#user-login input[type=submit].btnRegister{
+        margin-top: 20px;
+}
