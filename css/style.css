@@ -349,7 +349,7 @@ a.likeButton:hover{
     color:#ffffff;
     margin-right:50px;
 }
-textarea.textareaStyle {
+textarea.textareaStyle{
     width: 70%;
     top: 20px;
     border: 1px solid #ccc;
@@ -369,7 +369,6 @@ textarea.textareaStyle {
     font:          normal 700 24px/1 "Noto Sans", sans-serif;
     text-align:    center;
     text-shadow:   none;
-    margin-right: 15%;
     float: right;
     border: none;
     margin-top:30px;
@@ -583,4 +582,30 @@ img.editProfileImg{
     font:          normal 700 24px/1 "Noto Sans", sans-serif;
     text-align:    center;
     text-shadow:   none;
+}
+.bioCentre{
+    position: relative;
+    display: block;
+    margin:0 auto;
+    width:70%;
+}
+.bioCentre textarea.textareaStyle{
+    width: 100%;
+    top: 20px;
+    border: 1px solid #ccc;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    display: block;
+    position: relative;
+    height: 120px;
+    resize: none;
+}
+.bioCentre p {
+    margin: 10px 0px -20px;
+    color:#fff;
+}
+#counter-text{
+    color:#fff;
+    margin-top: 25px !important;
 }
