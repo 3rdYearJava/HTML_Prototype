@@ -620,3 +620,82 @@ span#mistake{
     color:red;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+.col {
+    float: left;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.span5{
+    width:41.666666666667%;
+}
+.span7 {
+    width: 58.333333333333%;
+}
+.module {
+    background-color: #0C1215;
+    box-shadow: 0 0 10px #000;
+    overflow: hidden;
+}
+.module.m1 {
+    margin: 10px 5% 7% 0;
+}
+.module.m2 {
+    margin: 10px 5% 10px 0;
+}
+.module.m3 {
+    margin: 10px 0 5% 10px;
+}
+.module.m4 {
+    margin: 10px 0 10px 10px;
+}
+.module a {
+    display: block;
+    text-decoration: none;
+    opacity: 1;
+    transition: .5s ease;
+}
+.module.m1 a {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.module.m1 img {
+    width: 54%;
+    float: right;
+    order: 2;
+}
+
+.module.m4 img {
+    width: 61%;
+    float: left;
+}
+.module img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.module.m1 .text {
+    float: left;
+    width: 50%;
+    order: 1;
+}
+
+.module.m4 .text {
+    float: right;
+    width: 39%;
+}
+.module .text {
+    text-align: center;
+}
+.module .text p {
+    color: #373c3d;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 10%;
+}
+.module a:hover {
+    opacity: 0.8;
+}
