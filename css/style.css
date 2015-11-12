@@ -365,6 +365,17 @@ textarea.textareaStyle{
     height: 120px;
     resize: none;
 }
+textarea.gigDescTxt{
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    display: block;
+    position: relative;
+    height: 120px;
+    resize: none;
+}
 .commentSection input.postSubmit, #edit_profile input.postSubmit{
     display:       inline-block;
     padding:       8px 20px;
@@ -437,7 +448,7 @@ p.warning{
 #user-login form{
     color: #ffffff;
 }
-#user-login input[type=text], input[type=password], input[type=email] {
+#user-login input[type=text], input[type=password], input[type=email],select {
     width: 100%;
     padding: 10px;
     margin-top: 0px;
@@ -614,6 +625,10 @@ img.editProfileImg{
     color:#fff;
     margin-top: 25px !important;
 }
+#user-login #counter-text{
+    color:#fff;
+    margin-top: 5px !important;
+}
 a.member{
     color:#c12222;
     margin-bottom:-5px;
@@ -692,12 +707,15 @@ span#mistake{
     float: right;
     width: 39%;
 }
+.module.m4 .text h2{
+    margin-top:60px;
+}
 .module .text {
     text-align: center;
 }
 .module .text p {
-    color: #373c3d;
-    font-size: 14px;
+    color: #9d9d9d;
+    font-size: 18px;
     line-height: 20px;
     padding: 0 10%;
 }
