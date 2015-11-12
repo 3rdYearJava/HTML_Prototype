@@ -364,6 +364,7 @@ textarea.textareaStyle{
     position: relative;
     height: 120px;
     resize: none;
+        color: #000;
 }
 textarea.gigDescTxt{
     width: 100%;
@@ -375,6 +376,7 @@ textarea.gigDescTxt{
     position: relative;
     height: 120px;
     resize: none;
+    color: #000;
 }
 .commentSection input.postSubmit, #edit_profile input.postSubmit{
     display:       inline-block;
@@ -408,7 +410,7 @@ p.warning{
     border: 2px solid #ccc;
     padding: 10px 40px 25px;
     margin-top: 70px;
-    margin-bottom:50px;
+    margin-bottom:120px;
 }
 #admin-login h2{
     color:#c12222;
@@ -448,7 +450,7 @@ p.warning{
 #user-login form{
     color: #ffffff;
 }
-#user-login input[type=text], input[type=password], input[type=email],select {
+#user-login input[type=text], input[type=password], input[type=email],select, input[type=date], input[type=number]{
     width: 100%;
     padding: 10px;
     margin-top: 0px;
@@ -724,4 +726,39 @@ span#mistake{
 }
 #user-login input[type=submit].btnRegister{
         margin-top: 20px;
+}
+.numUsers {
+    position: relative;
+    display: block;
+    width: 45%;
+    background: #c12222;
+    border-radius: 8px;
+    margin: 20px;
+    float: left;
+}
+.numUsers img {
+    max-width: 90%;
+    position: relative;
+    display: block;
+    margin: 10px;
+    float: left;
+}
+.numUsers h2{
+    color:#ffffff;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+.leftSide {
+    float: left;
+    width: 30%;
+}
+.rightSide {
+    float: right;
+    width: 70%;
+}
+.rightSide h3 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
 }
