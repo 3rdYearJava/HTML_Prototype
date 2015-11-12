@@ -736,6 +736,16 @@ span#mistake{
     margin: 20px;
     float: left;
 }
+.numUsers:nth-of-type(2){
+    background-color: #2B9024;
+}
+.numUsers:nth-of-type(3){
+    background-color: #337AB7;
+}
+.numUsers:nth-of-type(4){
+    background-color: #898C8E;
+    margin-bottom: 60px
+}
 .numUsers img {
     max-width: 90%;
     position: relative;
