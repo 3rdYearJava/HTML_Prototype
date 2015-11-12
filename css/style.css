@@ -1,12 +1,22 @@
+<<<<<<< HEAD
 body{
     background-color: #171e21;
 }
+=======
+>>>>>>> origin/master
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border:none;
-    background-color: #171E21;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #C12222;
+    background-color: transparent;
 }
 .navbar-inverse .navbar-nav>li>a {
+<<<<<<< HEAD
     color: #ffffff;
+=======
+    color: #373c3d;
+>>>>>>> origin/master
     font-size: 16px;
 }
 ul.navbar-nav{
@@ -32,6 +42,7 @@ ul.navbar-nav{
     }
     .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     
+<<<<<<< HEAD
     border-bottom: 1px solid #ffffff !important;
     }
     .nav>li>a {
@@ -43,6 +54,17 @@ ul.navbar-nav{
         color:#c12222;
     }
     .navbar-static-top .navbar-nav {
+=======
+    border-bottom: 1px solid #373c3d !important;
+    }
+	.navbar-nav>li {
+    border-right: 2px solid #373c3d;
+   	}
+   	.navbar-nav>li:last-of-type {
+    border-right: 0px solid #373c3d;
+	}
+	.navbar-static-top .navbar-nav {
+>>>>>>> origin/master
         float: none;
         text-align: center;
     }
@@ -115,7 +137,6 @@ ul.navbar-nav{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 40px 1% 30px;
-    background-color: #0c1215;
     box-shadow: 0 0 10px #000;
 }
 .slick-dots li button::before {
@@ -134,9 +155,15 @@ ul.navbar-nav{
     -webkit-font-smoothing: antialiased;
 }
 .container h2{
+<<<<<<< HEAD
     font-family: 'gartonmedium', serif;
     font-size: 36px;
     color: #9d9d9d;
+=======
+	font-family: 'gartonmedium', serif;
+	font-size: 36px;
+    color: #373c3d;
+>>>>>>> origin/master
     text-align: center;
     margin-bottom: 35px;
     margin-top: 35px;
@@ -146,8 +173,13 @@ h3 {
     color: #C12222;
 }
 h4{
+<<<<<<< HEAD
     color: #9d9d9d;
     font-style: italic;
+=======
+	color: #373c3d;
+	font-style: italic;
+>>>>>>> origin/master
 }
 .next {
     display: block;
@@ -156,7 +188,7 @@ h4{
     background-image: url('../img/bgNext1.png');
     background-repeat: no-repeat;
     float:right;
-    opacity:.4;
+    opacity:.7;
     position: relative;
         right: -41px;
     top: -210px;
@@ -195,9 +227,15 @@ h4{
     outline: none;
 }
 .featuredLink:hover{
+<<<<<<< HEAD
     cursor: pointer;
     color:#9d9d9d;
     text-decoration: none
+=======
+	cursor: pointer;
+	color:#373c3d;
+	text-decoration: none
+>>>>>>> origin/master
 }
 .featuredBox i{
     float:right;
@@ -214,10 +252,17 @@ h4.location{
     font-size:16px;
 }
 header{
+<<<<<<< HEAD
     height:100px;
     position: relative;
     width:100%;
     border-bottom: 1px solid #ffffff;
+=======
+	height:100px;
+	position: relative;
+	width:100%;
+	border-bottom: 1px solid #373c3d;
+>>>>>>> origin/master
 }
 header img{
     display: block;
@@ -228,14 +273,20 @@ header img{
 .footerContainer{
     width:100%;
     height:50px;
+<<<<<<< HEAD
 
     border-top:1px solid #fff;
+=======
+    position: relative;
+    clear: both;
+    border-top: 1px solid;
+>>>>>>> origin/master
 }
 .footerContainer p{
     float: left;
     
     margin-top: 15px;
-    color:#fff;
+    color:#373c3d;
 }
 #gigs h3, #profile h3{
     text-align:center;
@@ -655,6 +706,7 @@ span#mistake{
 }
 .module {
     background-color: #0C1215;
+<<<<<<< HEAD
     box-shadow: 0 0 10px #000;
     overflow: hidden;
 }
@@ -725,3 +777,9 @@ span#mistake{
 #user-login input[type=submit].btnRegister{
         margin-top: 20px;
 }
+=======
+}
+#gigs h1{
+    color:;
+}
+>>>>>>> origin/master
