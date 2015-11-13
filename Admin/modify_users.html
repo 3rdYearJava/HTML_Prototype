@@ -20,7 +20,7 @@
 
 </head>
 
-<body id="admin-home">
+<body id="admin-users">
     
     <!-- Navigation -->
     <header>
@@ -66,48 +66,28 @@
         
     </nav>
     <div class="container">
-        <h1>Website Statistics</h1>
-        <div class="numUsers">
-            <div class="leftSide">
-                <img src="../img/profile.jpg" alt="">
+        <h1>Modify Users</h1>
+        <div class = "row" id="Ben_Cookie">
+            <div class="rowLeft">
+                <img src="../img/profile.jpg" alt="profile picture">
+                <h2>Ben_Cookie</h2>
+                <h4>User ID: 1</h4>
+                <h4>benkcooke@gmail.com</h4>
+                <h4>2 Gigs Created</h4>
+                <h4>20 Liked Gigs</h4>
             </div>
-            <div class = "rightSide">
-                <h2>Number of Users</h2>
-                <h3>43</h3>
-
-            </div>
-            
-        </div>
-        <div class="numUsers">
-            <div class="leftSide">
-                <img src="../img/u2.PNG" alt="">
-            </div>
-            <div class = "rightSide">
-                <h2>Number of Gigs</h2>
-                <h3>96</h3>
-            </div>
-            
-        </div>
-        <div class="numUsers">
-            <div class="leftSide">
-                <img src="../img/imaginedragons.jpe" alt="">
-            </div>
-            <div class = "rightSide">
-                <h2>Number of Bands</h2>
-                <h3>4</h3>
-
+            <div class="rowRight">
+                <form action="" method="post">
+                    <input type="hidden" name="Ben_Cookie-delete" value="1" id="Ben_Cookie-delete">
+                    <input name="submit" type="submit" onClick="deleteUser(1)"value=" Delete User ">
+                </form>
+                <form action="" method="post">
+                    <input type="hidden" name="Ben_Cookie-ban" value="ban-Ben_Cookie" id="Ben_Cookie-ban">
+                    <input name="submit" type="submit" value=" Ban User ">
+                </form>
+                
             </div>
             
-        </div>
-        <div class="numUsers">
-            <div class="leftSide">
-                <img src="../img/profile.jpg" alt="">
-            </div>
-            <div class = "rightSide">
-                <h2>Number of Venues</h2>
-                <h3>4</h3>
-
-            </div>
             
         </div>
         

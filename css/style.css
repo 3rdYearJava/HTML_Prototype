@@ -772,3 +772,46 @@ span#mistake{
     color: #ffffff;
     font-size: 35px;
 }
+.row {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    float: left;
+    border-top:1px solid;
+}
+.row img{
+    max-width: 150px;
+    position: relative;
+    display: block;
+    margin: 10px;
+    float: left;
+}
+.rowLeft{
+    float:left;
+    width:50%;
+}
+.rowRight{
+    float:right;
+    width:50%;
+}
+.rowLeft h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #ffffff;
+}
+#admin-users input[type=submit] {
+    width: 100%;
+    background-color: #c12222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
