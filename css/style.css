@@ -57,9 +57,7 @@ ul.navbar-nav{
         display: inline-block;
     }
 }
-.one-time img{
-    max-height:550px;
-}
+
 .slideDesc {
     position: relative;
     display: block;
