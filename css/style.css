@@ -452,7 +452,7 @@ p.warning{
 #user-login form{
     color: #ffffff;
 }
-#user-login input[type=text], input[type=password], input[type=email],select, input[type=date], input[type=number]{
+input[type=text], input[type=password], input[type=email],select, input[type=date], input[type=number]{
     width: 100%;
     padding: 10px;
     margin-top: 0px;
@@ -1053,4 +1053,17 @@ input[type=checkbox], input[type=radio] {
     font-size: 16px;
     font-family: raleway;
     color:#000;
+}
+#admin-bands input[type=submit] {
+    width: 80%;
+    background-color: #c12222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    float:right;
 }
