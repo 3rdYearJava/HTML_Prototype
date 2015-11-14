@@ -18,10 +18,12 @@
     <link href="../css/style.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script type="text/javascript" src="../js/site.js"></script>
+    
+    <script type="text/javascript" src="../js/jQuery.textareaCounter.js"></script>
 
 </head>
 
-<body id="admin-home">
+<body id="admin-edit-user">
     
     <!-- Navigation -->
     <header>
@@ -47,10 +49,10 @@
                 <ul class="nav navbar-nav">
 
                     <li>
-                        <a href="index.html" class="active">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="modify_users.html" >Modify Users</a>
+                        <a href="modify_users.html" class="active">Modify Users</a>
                     </li>
                     <li>
                         <a href="modify_bands.html">Modify Bands</a>
@@ -67,51 +69,33 @@
         
     </nav>
     <div class="container">
-        <h1>Website Statistics</h1>
-        <div class="numUsers">
-            <div class="leftSide">
-                <img src="../img/profile.jpg" alt="">
+        <h1>Edit Profile</h1>
+        <form onsubmit="return validateProfileUpdate()" action="" method="post">
+            <img src="../img/profile.jpg" class="editProfileImg" alt="">
+            <div class="fileUpload btn btn-primary">
+                <span>Upload</span>
+                <input type="file" class="upload" />
             </div>
-            <div class = "rightSide">
-                <h2>Number of Users</h2>
-                <h3>43</h3>
+            <input id="email" name="email" placeholder="Email" type="email" onclick="return colourChange(email)" maxlength="25">
+            <div class="bioCentre">
+                
+                <textarea class="textareaStyle" name="userpost" id="userpost" placeholder="Your Bio...."></textarea>
+                <script type="text/javascript">
+                $("textarea").textareaCounter();
+                </script>
+                
 
+                
             </div>
-            
-        </div>
-        <div class="numUsers">
-            <div class="leftSide">
-                <img src="../img/u2.PNG" alt="">
-            </div>
-            <div class = "rightSide">
-                <h2>Number of Gigs</h2>
-                <h3>96</h3>
-            </div>
-            
-        </div>
-        <div class="numUsers">
-            <div class="leftSide">
-                <img src="../img/imaginedragons.jpe" alt="">
-            </div>
-            <div class = "rightSide">
-                <h2>Number of Bands</h2>
-                <h3>4</h3>
+            <label><input type="checkbox" name="changePassword" id="changePassword" value="Bike">Change Password</label><br />
+            <label>Password :</label>
+            <input id="password" name="password" placeholder="**********" type="password" onclick="return colourChange(password)" maxlength="25">
+            <label>Confirm Password :<span id="user-result1"><img src="" /></span></label>
+            <input id="password1" name="password1" placeholder="**********" type="password" onclick="return colourChange(password1)" maxlength="25">
+            <span id="mistake"></span>
+            <input name="submit" type="submit" class="postSubmit" value=" Update ">
+        </form>
 
-            </div>
-            
-        </div>
-        <div class="numUsers">
-            <div class="leftSide">
-                <img src="../img/profile.jpg" alt="">
-            </div>
-            <div class = "rightSide">
-                <h2>Number of Venues</h2>
-                <h3>4</h3>
-
-            </div>
-            
-        </div>
-        
 
 
     </div>
@@ -121,6 +105,13 @@
 
         </div>
     </footer>
+
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </body>
 
 </html>

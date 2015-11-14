@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/site.js"></script>
 
     <!-- Custom CSS -->
@@ -79,7 +80,17 @@
         
         <h1>Requested Gigs</h1>
         <div class = "sort">
+
             <p>Showing 1 - 6 of 6 Gigs</p>
+            <form class="filter" action="" method="post">
+                <select id="filter" name = "filter">
+                    <option value="" disabled selected>Filter By</option>
+                    <option value="band">Band A-Z</option>
+                    <option value="venue">Venue A-Z</option>
+                    <option value="likes">Upvotes</option>
+                </select>
+                <input type="submit" name="filter1" id="filter1" Style="display:none;">
+            </form>
         </div>
         <div class="sideMenu">
             <div class="navToggle"><h2>Show Navigation <i class="fa fa-plus-circle"></i></h2> </div>

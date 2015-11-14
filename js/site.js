@@ -180,3 +180,36 @@ else{
 }
 
 };
+function validateProfileUpdate(){
+	if (email.value.length < 5) {
+		showError(email);
+		setTimeout(function() { colourChange(email); }, 5000);
+		return false;
+	}else if(document.getElementById('changePassword').checked && password.value !== password1.value){
+		showError(password1);
+		setTimeout(function() { colourChange(password1); }, 5000);
+		showError(password);
+		setTimeout(function() { colourChange(password); }, 5000);
+		return false;
+	}else if(document.getElementById('changePassword').checked && password.value.length < 1){
+		showError(password1);
+		setTimeout(function() { colourChange(password1); }, 5000);
+		showError(password);
+		setTimeout(function() { colourChange(password); }, 5000);
+		return false;
+	}else{
+	return true;
+	}
+};
+
+$(document).ready(function(){
+    $(".navToggle").click(function(){
+        if ($(".sideMenu ul").hasClass("expanded")) {
+            $(".sideMenu ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $(".sideMenu ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+    });
+});
