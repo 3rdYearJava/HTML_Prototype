@@ -57,7 +57,9 @@ ul.navbar-nav{
         display: inline-block;
     }
 }
-
+.sliderImage{
+    width:100%;
+}
 .slideDesc {
     position: relative;
     display: block;
