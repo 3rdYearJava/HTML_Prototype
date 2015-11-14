@@ -449,7 +449,7 @@ p.warning{
     color:#c12222;
     text-align: center;
 }
-#user-login form{
+form{
     color: #ffffff;
 }
 input[type=text], input[type=password], input[type=email],select, input[type=date], input[type=number]{
@@ -462,7 +462,7 @@ input[type=text], input[type=password], input[type=email],select, input[type=dat
     font-family: raleway;
     color:#000;
 }
-#user-login input[type=submit] {
+#user-login input[type=submit], #admin-add-band input[type=submit] {
     width: 100%;
     background-color: #c12222;
     color: #fff;
@@ -726,7 +726,7 @@ span#mistake{
 .module a:hover {
     opacity: 0.8;
 }
-#user-login input[type=submit].btnRegister{
+#user-login input[type=submit].btnRegister, #admin-add-band input[type=submit].btnRegister{
         margin-top: 20px;
 }
 .numUsers {
