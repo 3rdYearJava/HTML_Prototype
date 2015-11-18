@@ -1,3 +1,14 @@
+$(document).ready(function(){
+    $(".navToggle").click(function(){
+        if ($(".sideMenu ul").hasClass("expanded")) {
+            $(".sideMenu ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $(".sideMenu ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+    });
+});
 $( function () {
 
     var height_diff = $( window ).height() - $( 'body' ).height();
@@ -46,7 +57,7 @@ function showError(name){
 	name.style.borderWidth = "medium";
 	name.focus();
 	name.value = "";
-}
+};
 
 function validateRegistration(){
 	
@@ -148,21 +159,7 @@ else{
 function colourChange(this1){
 	this1.style.borderColor = "white";
 };
-var element = document.getElementById('gigDate');
-if (document.getElementById('gigDate').value != undefined) {
-	 
-}else{
-	var today = new Date();
-	  var dd = today.getDate();
-	  var mm = today.getMonth()+1; 
-	  var yyyy = today.getFullYear();
-	  yyyy = parseInt(yyyy) + 1;
-	  today = yyyy + '-' + mm + '-' + dd;
-	  document.getElementById('gigDate').value = today;
-};
-var selectedText = document.getElementById('gigDate').value;
-var selectedDate = new Date(selectedText);
-var now = new Date();
+
 function validateSubmission(){
 
 if (band.value.length < 1) {
@@ -200,13 +197,6 @@ else if (gigDate.value.length < 1) {
 	setTimeout(function() { colourChange(gigDate); }, 5000);
 	return false;
 }
-else if (selectedDate < now) {
-	var mistakeText = document.getElementById('mistake').innerHTML = "Your date is in the past";
-	setTimeout(hide, 5000);
-	showError(gigDate);
-	setTimeout(function() { colourChange(gigDate); }, 5000);
-	return false;
-}
 else{
 	return true;
 }
@@ -218,6 +208,23 @@ function validateProfileUpdate(){
 		setTimeout(function() { colourChange(email); }, 5000);
 		return false;
 	}else if(document.getElementById('changePassword').checked && password.value !== password1.value){
+		showError(password1);
+		setTimeout(function() { colourChange(password1); }, 5000);
+		showError(password);
+		setTimeout(function() { colourChange(password); }, 5000);
+		return false;
+	}else if(document.getElementById('changePassword').checked && password.value.length < 1){
+		showError(password1);
+		setTimeout(function() { colourChange(password1); }, 5000);
+		showError(password);
+		setTimeout(function() { colourChange(password); }, 5000);
+		return false;
+	}else{
+	return true;
+	}
+};
+function validateEditProfile(){
+	if(document.getElementById('changePassword').checked && password.value !== password1.value){
 		showError(password1);
 		setTimeout(function() { colourChange(password1); }, 5000);
 		showError(password);
@@ -272,14 +279,7 @@ function validateGigEdit(){
 		showError(gigDate);
 		setTimeout(function() { colourChange(gigDate); }, 5000);
 		return false;
-	}
-	else if (selectedDate < now) {
-		var mistakeText = document.getElementById('mistake').innerHTML = "Your date is in the past";
-		setTimeout(hide, 5000);
-		showError(gigDate);
-		setTimeout(function() { colourChange(gigDate); }, 5000);
-		return false;
-	} else if( !Price.value.match(numberCheck)){
+	}else if( !Price.value.match(numberCheck)){
 		var mistakeText = document.getElementById('mistake').innerHTML = "You can only use numbers when entering the price";
 		setTimeout(hide, 10000);
 		showError(Price);
@@ -289,14 +289,4 @@ function validateGigEdit(){
 		return true;
 	}
 };
-$(document).ready(function(){
-    $(".navToggle").click(function(){
-        if ($(".sideMenu ul").hasClass("expanded")) {
-            $(".sideMenu ul.expanded").removeClass("expanded").slideUp(250);
-            $(this).removeClass("open");
-        } else {
-            $(".sideMenu ul").addClass("expanded").slideDown(250);
-            $(this).addClass("open");
-        }
-    });
-});
+

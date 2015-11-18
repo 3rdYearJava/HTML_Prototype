@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    
+    <link href="css/mediaQueries.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/site.js"></script>
     <script type="text/javascript" src="js/jQuery.textareaCounter.js"></script>
@@ -57,19 +57,21 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">About Us</a>
                     </li>
                     <li>
                         <a href="gigs.html">Gigs</a>
                     </li>
-                    
+                   
                     <li>
                         <a href="login.html">Login</a>
-                    </li>                     
+                    </li>                    
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="profile.html" class="active">Profile</a>
                     </li>
                 </ul>
             </div>
@@ -81,7 +83,7 @@
     <div class="container">
         
         <h1>Edit Profile</h1>
-        <form action="" method="post">
+        <form onsubmit="return validateEditProfile()" action="" method="post">
             <img src="img/profile.jpg" class="editProfileImg" alt="">
             <div class="fileUpload btn btn-primary">
                 <span>Upload</span>
@@ -93,7 +95,12 @@
                 <script type="text/javascript">
                 $("textarea").textareaCounter();
                 </script>
-                
+                <label><input type="checkbox" name="changePassword" id="changePassword" value="Bike">Change Password</label><br />
+            <label>Password :</label>
+            <input id="password" name="password" placeholder="**********" type="password" onclick="return colourChange(password)" maxlength="25">
+            <label>Confirm Password :<span id="user-result1"><img src="" /></span></label>
+            <input id="password1" name="password1" placeholder="**********" type="password" onclick="return colourChange(password1)" maxlength="25">
+            <span id="mistake"></span>
                 <input name="submit" type="submit" class="postSubmit" value=" Update ">
             </div>
         </form>
