@@ -59,7 +59,7 @@
                         <a href="modify_venue.html">Modify Venues</a>
                     </li>                     
                     <li>
-                        <a href="modify_gigs.html"  class="active">Remove Gig</a>
+                        <a href="modify_gigs.html"  class="active">Modify Gigs</a>
                     </li>
                 </ul>
             </div>
@@ -68,13 +68,13 @@
     </nav>
         <div class="container">
             <h1>Edit Gig</h1>
-            <form onsubmit="return validateVenueRegistration()" action="" method="post">
+            <form onsubmit="return validateGigEdit()" action="" method="post">
             <label>Date : </label>
-            <input id="venuename" name="venuename" placeholder="Venue Name" type="text" onclick="return colourChange(venuename)" maxlength="25">
+            <input type="date" name="gigDate" id ="gigDate" onclick="return colourChange(gigDate)" placeholder="Date">
             <label>Price :</label>
-            <input id="capacity" name="capacity" placeholder="Capacity" type="text" onclick="return colourChange(capacity)" maxlength="10">
+            <input id="Price" name="Price" placeholder="Price" type="text" onclick="return colourChange(Price)" maxlength="10">
             <span id="mistake"></span>
-            <input name="submit" type="submit" class="btnRegister"value=" Register ">
+            <input name="submit" type="submit" class="btnRegister"value=" Update ">
             
             </form>
         </div>

@@ -27,7 +27,19 @@ var numberCheck = /^[0-9.]+$/;
 var mistakeText;
 var date_regex = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/ ;
 
+$(document).ready(function() {
+    var date = new Date();
 
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear() + 1;
+
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+
+    var today = year + "-" + month + "-" + day;       
+    $("#gigDate").attr("value", today);
+});
 
 function showError(name){
 	name.style.borderColor = "red";
@@ -136,11 +148,23 @@ else{
 function colourChange(this1){
 	this1.style.borderColor = "white";
 };
-
-function validateSubmission(){
+var element = document.getElementById('gigDate');
+if (document.getElementById('gigDate').value != undefined) {
+	 
+}else{
+	var today = new Date();
+	  var dd = today.getDate();
+	  var mm = today.getMonth()+1; 
+	  var yyyy = today.getFullYear();
+	  yyyy = parseInt(yyyy) + 1;
+	  today = yyyy + '-' + mm + '-' + dd;
+	  document.getElementById('gigDate').value = today;
+};
 var selectedText = document.getElementById('gigDate').value;
 var selectedDate = new Date(selectedText);
 var now = new Date();
+function validateSubmission(){
+
 if (band.value.length < 1) {
 	var mistakeText = document.getElementById('mistake').innerHTML = "Please choose a band";
 	setTimeout(hide, 5000);
@@ -235,6 +259,31 @@ function validateVenueRegistration(){
 		setTimeout(hide, 10000);
 		showError(capacity);
 		setTimeout(function() { colourChange(capacity); }, 10000);
+		return false;
+	}else{
+		return true;
+	}
+};
+function validateGigEdit(){
+
+	if (gigDate.value.length < 1) {
+		var mistakeText = document.getElementById('mistake').innerHTML = "Please choose a date";
+		setTimeout(hide, 5000);
+		showError(gigDate);
+		setTimeout(function() { colourChange(gigDate); }, 5000);
+		return false;
+	}
+	else if (selectedDate < now) {
+		var mistakeText = document.getElementById('mistake').innerHTML = "Your date is in the past";
+		setTimeout(hide, 5000);
+		showError(gigDate);
+		setTimeout(function() { colourChange(gigDate); }, 5000);
+		return false;
+	} else if( !Price.value.match(numberCheck)){
+		var mistakeText = document.getElementById('mistake').innerHTML = "You can only use numbers when entering the price";
+		setTimeout(hide, 10000);
+		showError(Price);
+		setTimeout(function() { colourChange(Price); }, 10000);
 		return false;
 	}else{
 		return true;
