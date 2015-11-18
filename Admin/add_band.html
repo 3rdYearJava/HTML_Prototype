@@ -56,7 +56,7 @@
                         <a href="modify_bands.html" class="active">Modify Bands</a>
                     </li>
                     <li>
-                        <a href="#">Modify Venues</a>
+                        <a href="modify_venue.html">Modify Venues</a>
                     </li>                     
                     <li>
                         <a href="#">Remove Gig</a>
@@ -68,9 +68,9 @@
     </nav>
         <div class="container">
             <h1>Register Band</h1>
-            <form onsubmit="return validateRegistration()" action="" method="post">
+            <form onsubmit="return validateBandRegistration()" action="" method="post">
             <label>Band Name : </label>
-            <input id="fname" name="fname" placeholder="first name" type="text" onclick="return colourChange(fname)" maxlength="25">
+            <input id="fname" name="fname" placeholder="Band Name" type="text" onclick="return colourChange(fname)" maxlength="25">
             <label>Email :<span id="user-email"><img src="" /></span></label>
             <input id="email" name="email" placeholder="Email Address" type="email" onclick="return colourChange(email)" maxlength="60">
             <label>UserName :<span id="user-result"><img src="" /></span></label>
@@ -85,7 +85,7 @@
             </form>
         </div>
     
-    <footer class="footerContainer">
+    <footer class="footerContainer" id="footer">
         <div class="container">
             <p>&copy; GigForMe 2015</p>
 

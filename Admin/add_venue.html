@@ -22,8 +22,7 @@
     <script type="text/javascript" src="../js/jQuery.textareaCounter.js"></script>
 
 </head>
-
-<body id="admin-edit-user">
+<body id="admin-add-venue">
     
     <!-- Navigation -->
     <header>
@@ -31,7 +30,6 @@
             <img src="../img/logo.png" alt="logo">
         </a>
     </header>
-        
     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
         
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -52,13 +50,13 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="modify_users.html" class="active">Modify Users</a>
+                        <a href="modify_users.html">Modify Users</a>
                     </li>
                     <li>
                         <a href="modify_bands.html">Modify Bands</a>
                     </li>
                     <li>
-                        <a href="modify_venue.html">Modify Venues</a>
+                        <a href="modify_venue.html" class="active">Modify Venues</a>
                     </li>                     
                     <li>
                         <a href="#">Remove Gig</a>
@@ -68,37 +66,20 @@
             <!-- /.navbar-collapse -->
         
     </nav>
-    <div class="container">
-        <h1>Edit Profile</h1>
-        <form onsubmit="return validateProfileUpdate()" action="" method="post">
-            <img src="../img/profile.jpg" class="editProfileImg" alt="">
-            <div class="fileUpload btn btn-primary">
-                <span>Upload</span>
-                <input type="file" class="upload" />
-            </div>
-            <input id="email" name="email" placeholder="Email" type="email" onclick="return colourChange(email)" maxlength="25">
-            <div class="bioCentre">
-                
-                <textarea class="textareaStyle" name="userpost" id="userpost" placeholder="Your Bio...."></textarea>
-                <script type="text/javascript">
-                $("textarea").textareaCounter();
-                </script>
-                
-
-                
-            </div>
-            <label><input type="checkbox" name="changePassword" id="changePassword" value="Bike">Change Password</label><br />
-            <label>Password :</label>
-            <input id="password" name="password" placeholder="**********" type="password" onclick="return colourChange(password)" maxlength="25">
-            <label>Confirm Password :<span id="user-result1"><img src="" /></span></label>
-            <input id="password1" name="password1" placeholder="**********" type="password" onclick="return colourChange(password1)" maxlength="25">
+        <div class="container">
+            <h1>Register Venue</h1>
+            <form onsubmit="return validateVenueRegistration()" action="" method="post">
+            <label>Venue Name : </label>
+            <input id="venuename" name="venuename" placeholder="Venue Name" type="text" onclick="return colourChange(venuename)" maxlength="25">
+            <label>Capacity :</label>
+            <input id="capacity" name="capacity" placeholder="Capacity" type="text" onclick="return colourChange(capacity)" maxlength="10">
             <span id="mistake"></span>
-            <input name="submit" type="submit" class="postSubmit" value=" Update ">
-        </form>
-
-
-
-    </div>
+            <input name="submit" type="submit" class="btnRegister"value=" Register ">
+            
+            </form>
+        </div>
+        
+    
     <footer class="footerContainer" id="footer">
         <div class="container">
             <p>&copy; GigForMe 2015</p>
@@ -106,7 +87,7 @@
         </div>
     </footer>
 
-    <script src="../js/jquery.js"></script>
+        <script src="../js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>

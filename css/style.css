@@ -230,6 +230,7 @@ header img{
     height:50px;
 
     border-top:1px solid #fff;
+
 }
 .footerContainer p{
     float: left;
@@ -388,9 +389,12 @@ textarea.gigDescTxt{
     text-shadow:   none;
     float: right;
     border: none;
-    margin-top:20px;
+    margin-top:35px;
     margin-bottom: 20px;
     margin-right:15%;
+}
+#edit_profile input.postSubmit{
+    margin-right: 0%;
 }
 .commentSection form{
     height:200px;
@@ -462,7 +466,7 @@ input[type=text], input[type=password], input[type=email],select, input[type=dat
     font-family: raleway;
     color:#000;
 }
-#user-login input[type=submit], #admin-add-band input[type=submit] {
+#user-login input[type=submit], #admin-add-band input[type=submit], #admin-add-venue input[type=submit] {
     width: 100%;
     background-color: #c12222;
     color: #fff;
@@ -470,7 +474,7 @@ input[type=text], input[type=password], input[type=email],select, input[type=dat
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 15px;
     text-align: center;
     margin-left: auto;
@@ -726,9 +730,7 @@ span#mistake{
 .module a:hover {
     opacity: 0.8;
 }
-#user-login input[type=submit].btnRegister, #admin-add-band input[type=submit].btnRegister{
-        margin-top: 20px;
-}
+
 .numUsers {
     position: relative;
     display: block;
@@ -802,7 +804,7 @@ span#mistake{
     text-align: left;
     color: #ffffff;
 }
-#admin-users input[type=submit] {
+#admin-users input[type=submit], #admin-venues input[type=submit], #admin-gigs input[type=submit]{
     width: 80%;
     background-color: #c12222;
     color: #fff;
@@ -1044,7 +1046,7 @@ input[type=checkbox], input[type=radio] {
     margin-top:5px;
     float:right;
 }
-#admin-users select, #gigs select{
+#admin-users select, #gigs select, #admin-venues select, #admin-gigs select{
     width: 80%;
     padding: 5px 12px 0px 25px;
     margin-top: 0px;

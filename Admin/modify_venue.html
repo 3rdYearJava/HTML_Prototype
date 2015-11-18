@@ -21,7 +21,7 @@
 
 </head>
 
-<body id="admin-users">
+<body id="admin-venues">
     
     <!-- Navigation -->
     <header>
@@ -50,13 +50,13 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="modify_users.html" class="active">Modify Users</a>
+                        <a href="modify_users.html">Modify Users</a>
                     </li>
                     <li>
                         <a href="modify_bands.html">Modify Bands</a>
                     </li>
                     <li>
-                        <a href="modify_venue.html">Modify Venues</a>
+                        <a href="modify_venue.html" class="active">Modify Venues</a>
                     </li>                     
                     <li>
                         <a href="#">Remove Gig</a>
@@ -67,9 +67,9 @@
         
     </nav>
     <div class="container">
-        <h1>Modify Users</h1>
+        <h1>Modify Venues</h1>
         <div class = "sort">
-            
+            <a href="add_venue.html" class = "editProfile">Add Venue</a>
             <form class="search" method="post" action="" >
                             
                 <input type="text" name="inputSearch" id="inputSearch" placeholder="Search..." autocomplete="off" />
@@ -80,85 +80,70 @@
                  </ul>
                  <input type="submit" name="search" id="search" Style="display:none;">
              </form>
-             <form class="filter" action="" method="post">
-                <select id="filter" name = "filter">
-                    <option value="" disabled selected>Filter By</option>
-                    <option value="banned">Banned Users</option>
-                    <option value="Unbanned">Unbanned Users</option>
-                </select>
-                <input type="submit" name="filter1" id="filter1" Style="display:none;">
-            </form>
-        </div>
-        <div class = "row" id="Ben_Cookie">
-            <div class="rowLeft">
-                <img src="../img/profile.jpg" alt="profile picture">
-                <h2>Ben_Cookie</h2>
-                <h4>User ID: 1</h4>
-                <h4>benkcooke@gmail.com</h4>
-                <h4>2 Gigs Created</h4>
-                <h4>20 Liked Gigs</h4>
-            </div>
-            <div class="rowRight">
-                <form action="" method="post">
-                    <input type="hidden" name="Ben_Cookie-delete" value="1" id="Ben_Cookie-delete">
-                    <input name="submit" type="submit" value=" Delete User ">
-                </form>
-                <form action="" method="post">
-                    <input type="hidden" name="Ben_Cookie-ban" value="ban-Ben_Cookie" id="Ben_Cookie-ban">
-                    <input name="submit" type="submit" value=" Ban User ">
-                </form>
-                <a href="modify_profile.html" class="editUser">Edit Profile</a>
-            </div>
-            
-            
-        </div>
-        <div class = "row" id="Cian_O_Shea">
-            <div class="rowLeft">
-                <img src="../img/profile.jpg" alt="profile picture">
-                <h2>Cian_O_Shea</h2>
-                <h4>User ID: 2</h4>
-                <h4>cianoshea@gmail.com</h4>
-                <h4>2 Gigs Created</h4>
-                <h4>20 Liked Gigs</h4>
-            </div>
-            <div class="rowRight">
-                <form action="" method="post">
-                    <input type="hidden" name="Cian_O_Shea-delete" value="2" id="Cian_O_Shea-delete">
-                    <input name="submit" type="submit" value=" Delete User ">
-                </form>
-                <form action="" method="post">
-                    <input type="hidden" name="Cian_O_Shea-ban" value="ban-Cian_O_Shea" id="Cian_O_Shea-ban">
-                    <input name="submit" type="submit" value=" Ban User ">
-                </form>
-                <a href="modify_profile.html" class="editUser">Edit Profile</a>
-            </div>
-            
-            
-        </div>
-        <div class = "row" id="Oin_Buckley">
-            <div class="rowLeft">
-                <img src="../img/profile.jpg" alt="profile picture">
-                <h2>Oin_Buckley</h2>
-                <h4>User ID: 3</h4>
-                <h4>OinBuckley@gmail.com</h4>
-                <h4>2 Gigs Created</h4>
-                <h4>20 Liked Gigs</h4>
-            </div>
-            <div class="rowRight">
-                <form action="" method="post">
-                    <input type="hidden" name="Oin_Buckley-delete" value="3" id="Oin_Buckley-delete">
-                    <input name="submit" type="submit" value=" Delete User ">
-                </form>
-                <form action="" method="post">
-                    <input type="hidden" name="Oin_Buckley-ban" value="ban-Oin_Buckley" id="Oin_Buckley-ban">
-                    <input name="submit" type="submit" value=" Ban User ">
-                </form>
-                <a href="modify_profile.html" class="editUser">Edit Profile</a>
-            </div>
-            
-            
-        </div>
 
+        </div>
+        <div class = "row">
+            <div class="rowLeft">
+                
+                <h2>Croke Park</h2>
+                <h4>Venue ID: 1</h4>
+                <h4>80000 capacity</h4>
+            </div>
+            <div class="rowRight">
+                <form action="" method="post">
+                    <input type="hidden" name="deleteVenue" value="1" id="deleteVenue">
+                    <input name="submit" type="submit" value=" Remove Venue ">
+                </form>
+                
+            </div>
+            
+            
+        </div>
+        <div class = "row">
+            <div class="rowLeft">
+                <h2>Marquee</h2>
+                <h4>Venue ID: 2</h4>
+                <h4>10000 capacity</h4>
+            </div>
+            <div class="rowRight">
+                <form action="" method="post">
+                    <input type="hidden" name="deleteVenue" value="2" id="deleteVenue">
+                    <input name="submit" type="submit" value=" Remove Venue ">
+                </form>
+            </div>
+            
+            
+        </div>
+        <div class = "row">
+            <div class="rowLeft">
+                <h2>O2 Arena</h2>
+                <h4>Venue ID: 3</h4>
+                <h4>20000 capacity</h4>
+            </div>
+            <div class="rowRight">
+                <form action="" method="post">
+                    <input type="hidden" name="deleteVenue" value="3" id="deleteVenue">
+                    <input name="submit" type="submit" value=" Remove Venue ">
+                </form>
+            </div>
+            
+            
+        </div>
+        <div class = "row">
+            <div class="rowLeft">
+                <h2>The Aviva Stadium</h2>
+                <h4>Venue ID: 4</h4>
+                <h4>80000 capacity</h4>
+            </div>
+            <div class="rowRight">
+                <form action="" method="post">
+                    <input type="hidden" name="deleteVenue" value="4" id="deleteVenue">
+                    <input name="submit" type="submit" value=" Remove Venue ">
+                </form>
+            </div>
+            
+            
+        </div>
 
 
     </div>

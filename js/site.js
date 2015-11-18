@@ -1,3 +1,11 @@
+$( function () {
+
+    var height_diff = $( window ).height() - $( 'body' ).height();
+    if ( height_diff > 0 ) {
+        $( '#footer' ).css( 'margin-top', height_diff );
+    }
+
+});
 function validateComment(){
 	if (userpost.value.length < 1) {
 	userpost.style.borderWidth = "medium";
@@ -201,7 +209,37 @@ function validateProfileUpdate(){
 	return true;
 	}
 };
-
+function validateBandRegistration(){
+	if (venuename.value.length < 2) {
+		showError(venuename);
+		setTimeout(function() { colourChange(venuename); }, 5000);
+		return false;
+	} else if( !capacity.value.match(numberCheck)){
+		var mistakeText = document.getElementById('mistake').innerHTML = "You can only use numbers when entering the capacity";
+		setTimeout(hide, 10000);
+		showError(capacity);
+		setTimeout(function() { colourChange(capacity); }, 10000);
+		return false;
+	}else{
+		return true;
+	}
+};
+function validateVenueRegistration(){
+	if (venuename.value.length < 2) {
+		var mistakeText = document.getElementById('mistake').innerHTML = "You must enter a venue name";
+		showError(venuename);
+		setTimeout(function() { colourChange(venuename); }, 5000);
+		return false;
+	} else if( !capacity.value.match(numberCheck)){
+		var mistakeText = document.getElementById('mistake').innerHTML = "You can only use numbers when entering the capacity";
+		setTimeout(hide, 10000);
+		showError(capacity);
+		setTimeout(function() { colourChange(capacity); }, 10000);
+		return false;
+	}else{
+		return true;
+	}
+};
 $(document).ready(function(){
     $(".navToggle").click(function(){
         if ($(".sideMenu ul").hasClass("expanded")) {
