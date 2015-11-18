@@ -32,8 +32,9 @@
     <![endif]-->
 
 </head>
-<body id="user-login">
-    
+
+<body id="profile">
+    <a href=""></a>
     <!-- Navigation -->
     <header>
         <a href="index.html">
@@ -66,36 +67,66 @@
                     </li>
                    
                     <li>
-                        <a href="login.html" class="active">Login</a>
+                        <a href="login.html">Login</a>
                     </li>                    
                     <li>
-                        <a href="profile.html">Profile</a>
+                        <a href="profile.html" class="active">Profile</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         
     </nav>
-        <div id="login">
-            <h2>Login</h2>
-            <form action="" method="post">
-            <label>UserName :</label>
-            <input id="name" name="username" placeholder="username" type="text">
-            <label>Password :</label>
-            <input id="password" name="password" placeholder="**********" type="password">
-            <a href="register.html" class="member">Not a member? Register Here!</a>
-            <input name="submit" type="submit" value=" Login ">
-            <p>If you're a band looking to register, email <a href="mailto:ben@gigforme.ie">ben@gigforme.ie</a></p>
-            </form>
+    
+    <!-- Page Content -->
+    <div class="container">
+        
+        <h1>U2's Profile</h1>
+        
+        <div class="sideContent">
+            <img src="img/profile.jpg" alt="profile picture">
+            <h3>U2</h3>
+            <p>U2 are an Irish rock band from Dublin. Formed in 1976, the group consists of Bono (vocals and guitar), the Edge (guitar, keyboards, and vocals), Adam Clayton (bass guitar), and Larry Mullen, Jr. (drums and percussion).[1] U2's early sound was rooted in post-punk but eventually grew to incorporate influences from many genres of popular music. Throughout the group's musical pursuits, they have maintained a sound built on melodic instrumentals. Their lyrics, often embellished with spiritual imagery, focus on personal themes and sociopolitical concerns.</p>
+        </div>
+        <div class="content">
+            <div class = "sort">
+                <a class="editProfile" href="edit_profile.html">Edit Profile</a>
+                <p>Showing 1 - 4 of 4 UpVoted &amp; Commented Gigs</p>
+            </div>
+            <div class="featuredBox">
+                <a href="Gig_page.html" class="gigHover"><img src="img/u2.jpg" alt="U2"></a>
+                <a href="Gig_page.html" class="gigHover"><h3>U2</h3></a>
+                <h4 class="location">Croke Park <i class="fa fa-thumbs-up"> 100</i></h4>
+                <a href="modify_profile.html" class="editUser" id="accept">Accept</a>
+                <a href="modify_profile.html" class="editUser" id="decline">Decline</a>
+            </div>
+            <div class="featuredBox">
+                <a href="Gig_page.html" class="gigHover"><img src="img/u2.jpg" alt="U2"></a>
+                <a href="Gig_page.html" class="gigHover"><h3>U2</h3></a>
+                <h4 class="location">The Marquee<i class="fa fa-thumbs-up"> 120</i></h4>
+                <a href="modify_profile.html" class="editUser" id="accept">Accept</a>
+                <a href="modify_profile.html" class="editUser" id="decline">Decline</a>
+            </div>
         </div>
 
-    
+    </div>
+
     <footer class="footerContainer">
         <div class="container">
             <p>&copy; GigForMe 2015</p>
 
         </div>
     </footer>
+    
+
+    
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
 </body>
 
 </html>

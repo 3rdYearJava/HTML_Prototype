@@ -1011,3 +1011,12 @@ a.gigHover {
     text-decoration: none;
     color:#c12222;
 }
+a#accept{
+    background-color:green;
+    width:100%;
+    margin-bottom: 0px;
+}
+a#decline{
+    background-color:#c12222;
+    width:100%;
+} 
